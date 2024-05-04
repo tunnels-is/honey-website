@@ -48,11 +48,42 @@ html, body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding drop shadow */
 }
 
-/* Styling for Features Section */
-.features {
+
+/* Styling for "What is this service?" Section */
+#what-is-service {
+    background: linear-gradient(to bottom, #459868, #1cb566); /* Gradient background */
+    color: white;
     padding: 50px;
     text-align: center;
 }
+
+#what-is-service h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+#what-is-service p {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+/* Styling for Features Section */
+.features {
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1cb566, #459868); /* Gradient background */
+    font-size: 20px;
+}
+
+.features-font-title {
+    font-weight: 1900;
+    font-size: 32px;
+}
+
+.features-font-tagline {
+    font-weight: 800;
+}
+
 
 .features-list {
     display: flex;
@@ -66,12 +97,13 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%; /* Adjust the width as needed */
-    margin: 1%;
-    padding: 20px;
+    width: 20%; /* Adjust the width as needed */
+    margin: 0.4%;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    background: linear-gradient(to bottom, #1cb566, #d57d2b);
 }
 
 .feature-item:hover {
@@ -112,7 +144,7 @@ html, body {
 .purchase-btn {
     padding: 10px 20px;
     font-size: 24px;
-    background-color: #4CAF50;
+    background-color: #fd9400;
     color: white;
     border: none;
     cursor: pointer;
@@ -130,9 +162,9 @@ html, body {
 
 /* Styling for Start Your Journey Today Section */
 .start-journey {
-    background-color: #fd9400;
+    background: linear-gradient(to bottom, #fd9400, #c66a17); /* Gradient background */
     color: white;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -151,20 +183,48 @@ html, body {
     color: #fd9400;
 }
 
-/* Styling for "What is this service?" Section */
-#what-is-service {
-    background-color: #5e7a6a;
+
+/* Styling for Footer */
+footer {
+    background: linear-gradient(to bottom, #333, #000); /* Gradient background */
     color: white;
-    padding: 50px;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if the screen is too small */
 }
 
-#what-is-service h2 {
+.support-links,
+.contact-card {
+    flex-basis: 80%; /* Set a larger flex-basis for better centering */
+    max-width: 400px; /* Limit the maximum width of each section */
+    text-align: center; /* Center the text inside each section */
+    margin-bottom: 50px; /* Add some bottom margin for spacing */
+}
+
+.support-links h3,
+.contact-card h3 {
     margin-bottom: 20px;
-    font-size: 3em;
 }
 
-#what-is-service p {
-    font-size: 24px;
-    line-height: 1.6;
+.support-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.support-links ul li {
+    margin-bottom: 10px;
+}
+
+.support-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.support-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
 }
