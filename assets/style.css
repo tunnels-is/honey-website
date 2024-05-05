@@ -30,6 +30,7 @@ html, body {
     cursor: pointer;
     margin-bottom: 20px;
     border-radius: 5px;
+    animation: LearnMoreBtn 1.5s ease 0s 1 normal forwards;
 }
 
 .banner-text {
@@ -227,4 +228,88 @@ footer {
 
 .contact-card p {
     margin-bottom: 10px;
+}
+
+/* Styling for "How to Access" Section */
+#how-to-access {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#how-to-access h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#how-to-access p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#how-to-access pre {
+    background-color: #292929;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#how-to-access pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 18px;
+}
+
+#how-to-access pre code::selection {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#how-to-access pre::-webkit-scrollbar {
+    width: 12px;
+}
+
+#how-to-access pre::-webkit-scrollbar-thumb {
+    background-color: #fd9400;
+    border-radius: 10px;
+}
+
+#how-to-access pre::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+}
+
+
+
+/* Animations */
+@keyframes LearnMoreBtn {
+    0% {
+        transform: scale3d(1, 1, 1) translateX(-50px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1) translateX(0);
+        opacity: 1;
+    }
 }
