@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Niceland Honey Pot</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="stylesheet" href="assets/style.css">
+	<meta charset="UTF-8">
+	<title>Niceland Honey Pot</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
 
-<div id="hero1" class="hero">
-    <div>
-        <div class="banner-text">Do you dislike bots? Well also dislike them.</div>
-        <div class="body-text">We have a uniquely made list waiting for you.</div>
-        <button class="btn" onclick="document.getElementById('what-is-service').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
-    </div>
-</div>
+	<div class="banner">
+		<script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+		<img class="image" src="https://raw.githubusercontent.com/tunnels-is/media/master/nl-website/v2/comp/bannerv6.webp">
 
-<div id="what-is-service" class="section">
-    <h2>Unlock Valuable Insights for Your Cybersecurity</h2>
-    <p>Access our regularly updated list of IPs actively scanning the web, providing you with valuable insights to enhance your cybersecurity strategy.<br>
-        This curated resource of active bot internet scanners equips you with the information needed to fortify your defenses against potential threats.<br>
-        Whether you're an IT security professional, a system administrator, or an organization committed to maintaining robust cybersecurity measures,<br>
-        our comprehensive list serves as a valuable reference point to stay ahead of  the latest scanning activities on the internet.<br>
-        Gain peace of mind knowing that you have the necessary intelligence to safeguard your digital infrastructure effectively.</p>
-</div>
+		<div class="info">
+			<div class="info-big">Block attackers and bots in real time</div>
+			<div class="info-small">Niceland Honey provides you with real time honeypot data</div>
+			<button class="btn"
+				onclick="document.getElementById('what-is-service').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+		</div>
+	</div>
 
+	<div class="content">
+		<div id="what-is-service" class="section">
+			<h2>Real Time Data, Real Time Protection ..</h2>
+			<p>Niceland Honey is a real time API which is connected to a honeypot. This honeypot is gather information on all
+				IP Addresse that it comes into contact with, counting packets and tracking activity.
+			</p>
+			</br>
+			<p>
+				These IP Addresses can then be queried for and used for real time blocking and threat analysis by our customers.
+			</p>
 
+		</div>
 
-<div id="features" class="section features">
-    <h2 class ="features-font-title">We offer different subscriptions based on your needs.</h2>
-    <h3 class ="features-font-tagline">Unsure about the list? All subscriptions come with a 1-day trial.</h3>
-    <div class="features-list">
-        <div class="feature-item">
-            <img class="feature-image" src="assets/key.jpg" alt="Feature Image">
-            <!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
-            <h3>1 Day API Key</h3>
-            <h4>Lets you query the Niceland honey pot data once every day.</h4>
-            <p class="price features-font-tagline">$3.00/month</p>
-            <a href="https://nicelandhoneypot.lemonsqueezy.com/buy/4667f362-8b17-40e7-a64b-fca256062593" class="purchase-btn" target="_blank">Purchase</a>
-        </div>
-        <div class="feature-item">
-            <img class="feature-image" src="assets/key.jpg" alt="Feature Image">
-            <!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
-            <h3>60 Minute API Key</h3>
-            <h4>Lets you query the Niceland honey pot data once every 60 minutes.</h4>
-            <p class="price features-font-tagline">$5/month</p>
-            <a href="https://nicelandhoneypot.lemonsqueezy.com/buy/a9b1d34e-f499-47ff-a578-3f716ca702c0" class="purchase-btn" target="_blank">Purchase</a>
-        </div>
-        <div class="feature-item">
-            <img class="feature-image" src="assets/key.jpg" alt="Feature Image">
-            <!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
-            <h3>10 Minute API Key</h3>
-            <h4>Lets you query the Niceland honey pot data once every 10 minutes.</h4>
-            <!-- <p class="price"><span class="original-price">$100</span> $50</p> -->
-            <p class="price features-font-tagline">$9.99/month</p>
-            <a href="https://nicelandhoneypot.lemonsqueezy.com/buy/a3ab4956-a3df-4b4f-98f5-1db8971b8704" class="purchase-btn" target="_blank">Purchase</a>
-        </div>
-    </div>
-</div>
+		<div id="features" class="section features">
+			<h2 class="features-font-title">We offer different subscriptions based on your needs</h2>
+			<h3 class="features-font-tagline">Unsure about the list? All subscriptions come with a 1-day free trial</h3>
+			<div class="features-list">
+				<div class="feature-item">
+					<!-- <img class="feature-image" src="assets/key.jpg" alt="Feature Image"> -->
+					<!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
+					<h3>Daily API Key</h3>
+					<h4>Lets you query the Niceland honey pot data once every day</h4>
+					<p class="price features-font-tagline">$3.00/month</p>
+					<a href="https://nicelandhoneypot.lemonsqueezy.com/buy/a3ab4956-a3df-4b4f-98f5-1db8971b8704?embed=1"
+						class="purchase-btn lemonsqueezy-button">Purchase</a>
+				</div>
 
-<div id="how-to-access" class="section">
-    <h2>How to Access</h2>
-    <p>Once you obtain a valid subscription, accessing the list is straightforward. Simply use the following command:</p>
-    <pre><code>curl -s -X POST http://0.0.0.0:44444/ip</code></pre>
-    <p>This command allows you to retrieve the list of actively scanning IPs in a convenient and efficient manner.</p>
-</div>
+				<div class="feature-item">
+					<!-- <img class="feature-image" src="assets/key.jpg" alt="Feature Image"> -->
+					<!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
+					<h3>60 Minute API Key</h3>
+					<h4>Lets you query the Niceland honey pot data once every 60 minutes</h4>
+					<p class="price features-font-tagline">$5/month</p>
+					<a href="https://nicelandhoneypot.lemonsqueezy.com/buy/a9b1d34e-f499-47ff-a578-3f716ca702c0"
+						class="purchase-btn" target="_blank">Purchase</a>
+				</div>
 
+				<div class="feature-item">
+					<!-- <img class="feature-image" src="assets/key.jpg" alt="Feature Image"> -->
+					<!-- <img class="feature-icon" src="sale-label-icon.svg" alt="Feature Icon"> -->
+					<h3>10 Minute API Key</h3>
+					<h4>Lets you query the Niceland honey pot data once every 10 minutes</h4>
+					<!-- <p class="price"><span class="original-price">$100</span> $50</p> -->
+					<p class="price features-font-tagline">$9.99/month</p>
+					<a href="https://nicelandhoneypot.lemonsqueezy.com/buy/a3ab4956-a3df-4b4f-98f5-1db8971b8704"
+						class="purchase-btn" target="_blank">Purchase</a>
+				</div>
+			</div>
+		</div>
 
-<div class="section start-journey">
-    <h1>Need Privacy?<br>Try our VPN for free with a 1-month trial.</h1>
-    <button class="btn" onclick="window.open('https://nicelandvpn.is', '_blank');">Learn More</button>
-    <h5><img src="assets/cr.svg"  alt="Copy Right Logo"/> 2024 NicelandVPN. All rights reserved.</h5>
-</div>
+		<div id="how-to-access" class="section">
+			<h2>How to Access</h2>
+			<p>1. Get a valid license key by subscribing </p>
+			<p>2. Send a GET request to the API </p>
+			<pre><code>curl https://honey-api.niceland.tech:44444/ip/[LICENSE]/[TIME_AFTER_UNIX]</code></pre>
+			<p><b>TIME_AFTER_UNIX (unix timestamp):</b> Used for filtering. The API will only send you IPs which have been see
+				AFTER the given timestamp </p>
+			<pre><code>Response: [ {IP:"0.0.0.0", Hit:0, Count:0} , ...] </code></pre>
+			<p><b>Count (int):</b> Tells us how many packets this IP has sent to the honeypot</p>
+			<p><b>Hit (unix timestamp): </b>Last time the honeypot saw this IP</p>
+		</div>
 
-<footer>
-    <div class="support-links">
-        <h3>Support</h3>
-        <ul>
-            <li><a href="mailto:support@nicelandvpn.is" target="_blank">support@nicelandvpn.is</a></li>
-            <li><a href="https://join.slack.com/t/nicelandvpn/shared_invite/zt-1rfv4ks6d-A5lLr9W4FdjEzlmZXwrMzw" target="_blank">Slack</a></li>
-            <li><a href="https://discord.gg/7Ts3PCnCd9" target="_blank">Discord</a></li>
-            <li><a href="https://new.reddit.com/r/nicelandvpn/" target="_blank">Reddit</a></li>
-            <li><a href="https://www.twitter.com/nicelandvpn" target="_blank">Twitter</a></li>
-            <li><a href="https://signal.group/#CjQKIGvNLjUd8o3tkkGUZHuh0gfZqHEsn6rxXOG4S1U7m2lEEhBtuWbyxBjMLM_lo1rVjFX0" target="_blank">Signal</a></li>
-        </ul>
-    </div>
-    <div class="contact-card">
-        <h3>Contact</h3>
-        <p>Tunnels EHF</p>
-        <p>SSN. 4209221080</p>
-        <p>VAT. No. 148343</p>
-        <p>Borgartún 23</p>
-        <p>105 Reykjavík</p>
-        <p>Iceland</p>
-    </div>
-</footer>
+		<div class="section start-journey">
+			<h1>Try NicelandVPN for free with a 1-month free trial</h1>
+			<button class="btn" onclick="window.open('https://nicelandvpn.is', '_blank');">Learn More</button>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="support-links">
+			<h3>Support</h3>
+			<ul>
+				<li><a href="mailto:support@nicelandvpn.is" target="_blank">support@nicelandvpn.is</a></li>
+				<li><a href="https://join.slack.com/t/nicelandvpn/shared_invite/zt-1rfv4ks6d-A5lLr9W4FdjEzlmZXwrMzw"
+						target="_blank">Slack</a></li>
+				<li><a href="https://discord.gg/7Ts3PCnCd9" target="_blank">Discord</a></li>
+				<li><a href="https://new.reddit.com/r/nicelandvpn/" target="_blank">Reddit</a></li>
+				<li><a href="https://www.twitter.com/nicelandvpn" target="_blank">Twitter</a></li>
+				<li><a href="https://signal.group/#CjQKIGvNLjUd8o3tkkGUZHuh0gfZqHEsn6rxXOG4S1U7m2lEEhBtuWbyxBjMLM_lo1rVjFX0"
+						target="_blank">Signal</a></li>
+			</ul>
+		</div>
+
+		<div class="contact-card">
+			<h3>Contact</h3>
+			<p>Tunnels EHF</p>
+			<p>SSN. 4209221080</p>
+			<p>VAT. No. 148343</p>
+			<p>Borgartún 23</p>
+			<p>105 Reykjavík</p>
+			<p>Iceland</p>
+		</div>
+	</footer>
 
 </body>
 <!-- cyberofficial says: "why are you looking here?" --->
+
 </html>
